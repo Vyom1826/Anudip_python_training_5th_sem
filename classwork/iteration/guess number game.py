@@ -1,7 +1,7 @@
-#program for guess the number game
+# program for guess the number game
  
 import random
-number_to_guess = random.randint(1,100)
+number_to_guess = random.randint(1,100) 
 
 # loop until the user guesses the correct number
 
@@ -11,6 +11,6 @@ while True:
         print("Congratulations! You guessed the correct number.")
         break
     elif user_guess < number_to_guess:
-        print("Too low! Try again.")
+        print("low! Try again.")
     else:
-        print("Too high! Try again.")
+        print("high! Try again.")
