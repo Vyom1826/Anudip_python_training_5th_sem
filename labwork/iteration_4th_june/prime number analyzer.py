@@ -6,7 +6,7 @@ while num<1:
     num=int(input("Enter a number: "))
 
 if num>1:
-    for i in range(2,num):
+    for i in range(2,int(num/2)+1):
         if (num%i)==0:
             print(num,"is not a prime number")
             print("Factors of",num,"are:")
