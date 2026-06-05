@@ -17,10 +17,7 @@ while True:
 
     # enter choice
     option=int(input("Enter your option: "))
-   # while option<1 or option>4:
-      #  print("Invalid option")
-      #  option=int(input("Enter your option: "))
-
+   
     # using if else to perform the operations
     #FOR WITHDRAWAL
     if(option==1):
