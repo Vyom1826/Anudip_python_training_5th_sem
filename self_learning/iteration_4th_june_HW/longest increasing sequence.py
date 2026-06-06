@@ -1,4 +1,4 @@
-# program count the length of the longest increasing subsequence in a given list of numbers
+# program to find the length of the longest increasing subsequence in a list of integers
 
 n = int(input("Enter the number of elements in the list: ")) # input from user, number of elements in the list
 print("Enter the elements of the list: ") # prompt user to enter the elements of the list

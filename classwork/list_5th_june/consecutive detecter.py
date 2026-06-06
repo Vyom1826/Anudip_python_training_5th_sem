@@ -1,3 +1,5 @@
+#program to find all the pairs of consecutive numbers
+
 numbers = [4, 5, 6, 10, 11, 15, 16, 17]
 
 numbers1 = []

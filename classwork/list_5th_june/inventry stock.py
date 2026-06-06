@@ -15,6 +15,7 @@ for i in stock :
         available_count += 1
     if i > 15 :
         stock1.append(i)
+        
 print("Out of stock products:",count)
 print("Restock_products:",Restock_products)
 print("available stock:",available_count)

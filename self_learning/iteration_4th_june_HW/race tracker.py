@@ -2,8 +2,6 @@
 
 n = int(input("Enter number of racers: "))
 
-fn = int(input("Enter number of racers: "))
-
 lap_time = float(input("Enter lap time for racer 1: "))
 
 fastest_time = lap_time
