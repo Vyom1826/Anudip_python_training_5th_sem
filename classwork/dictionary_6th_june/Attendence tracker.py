@@ -7,7 +7,7 @@ Display the roll number of students who are Present'''
 attendance = {}
 
 # Input attendance for 30 students
-for i in range(5):
+for i in range(30):
     roll_no = int(input("Enter Roll Number: "))
     
     status = input("Enter Attendance (Present/Absent): ")
