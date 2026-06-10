@@ -1,3 +1,15 @@
+'''Create a menu-driven program to: 
+        1. Display all employee records.  
+        2. Search employee details using Employee ID.  
+        3. Calculate the average salary.  
+        4. Find the highest-paid and lowest-paid employee.  
+        5. Display employees earning above ₹50,000.  
+        6. Add a new employee record to the file.  
+        7. Generate salary categories: 
+            o High (₹60,000 and above)  
+            o Medium (₹40,000–₹59,999)  
+            o Low (Below ₹40,000)  '''
+
 def read_employees():
     employees = []
 
@@ -46,25 +58,20 @@ def average_salary():
     print("Average Salary =", avg)
 
 
+def get_salary(emp):
+    return emp[2]
+
 def highest_lowest_salary():
     employees = read_employees()
 
-    highest = employees[0]
-    lowest = employees[0]
-
-    for emp in employees:
-        if emp[2] > highest[2]:
-            highest = emp
-
-        if emp[2] < lowest[2]:
-            lowest = emp
+    highest = max(employees, key=get_salary)
+    lowest = min(employees, key=get_salary)
 
     print("\nHighest Paid Employee")
     print(highest[0], highest[1], highest[2])
 
     print("\nLowest Paid Employee")
     print(lowest[0], lowest[1], lowest[2])
-
 
 def salary_above_50000():
     employees = read_employees()
